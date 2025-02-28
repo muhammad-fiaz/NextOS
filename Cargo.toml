@@ -1,0 +1,27 @@
+[package]
+name = "nextos"
+version = "0.0.0"
+authors = ["Muhammad Fiaz <contact@muhammadfiaz.com>"]
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/muhammad-fiaz/NextOS"
+homepage = "https://github.com/muhammad-fiaz/NextOS#readme"
+license = "GPL-3.0"
+keywords = ["operating-system", "rust"]
+
+[build-dependencies]
+
+[dependencies]
+bootloader = "0.9"
+nextkernel = { path = "kernel" }
+gui= { path = "gui" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[[bin]]
+name = "nextos"
+path = "src/main.rs"

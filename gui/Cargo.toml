@@ -1,0 +1,19 @@
+[package]
+name = "gui"
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/muhammad-fiaz/NextKernel"
+homepage = "https://github.com/muhammad-fiaz/NextKernel#readme"
+license = "GPL-3.0"
+keywords = ["operating-system", "kernel", "rust"]
+
+
+[lib]
+name = "gui"
+path = "src/lib.rs"
+
+[dependencies]
+slint = "1.10.0"
+
+[build-dependencies]
+slint-build = "1.10.0"
