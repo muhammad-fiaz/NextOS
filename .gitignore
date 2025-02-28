@@ -1,0 +1,40 @@
+# Ignore build artifacts
+target/
+build/
+out/
+
+# Cargo build files
+**/*.rlib
+**/*.rmeta
+Cargo.lock
+
+# Rust metadata
+*.d
+*.o
+
+# Kernel binary and boot images
+*.iso
+*.bin
+*.img
+*.elf
+*.map
+
+# QEMU and debugging files
+qemu.log
+core.*
+*.core
+
+# Editor and IDE settings
+.vscode/
+*.swp
+*.swo
+
+# Python virtual environments (if any scripts are used)
+venv/
+__pycache__/
+
+# Ignore the NextKernel build output, but keep the submodule
+kernel/target/
+kernel/build/
+
+.idea/
